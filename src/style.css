@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Body';
+    src: url('./Economica-Regular.ttf');
+    font-style: normal;
+}
 .hello {
     color: red;
     background: url('./stefan-cosma-521680-unsplash.jpg');
+    font-family: 'Body';
 }
