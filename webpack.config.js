@@ -15,7 +15,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Output Management'
         }),
-        new webpack.HotModuleReplacementPlugin()
+        //new webpack.HotModuleReplacementPlugin()
     ],
     output: {
         filename: '[name].main.js',
