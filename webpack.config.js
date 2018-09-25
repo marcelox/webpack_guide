@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -8,14 +9,15 @@ module.exports = {
     },
     devtool: "inline-source-map",
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        hot:true
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             title: 'Output Management'
         }),
-        //new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin()
     ],
     output: {
         filename: '[name].main.js',
