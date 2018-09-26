@@ -31,4 +31,5 @@ module.exports = {
         filename: '[name].main.js',
         path: path.resolve(__dirname, 'dist')
     },
+    mode: 'development'
 };
