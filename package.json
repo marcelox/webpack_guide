@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
+    "firefox": "webpack-dev-server --open firefox",
     "build": "webpack"
   },
   "author": "",
